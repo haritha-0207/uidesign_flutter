@@ -17,7 +17,8 @@ class _MyStackState extends State<MyStack> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SingleChildScrollView(
+        body:SafeArea(child:
+        SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -227,7 +228,7 @@ class _MyStackState extends State<MyStack> {
           ),
         ),
       ),
-    );
+      )  );
   }
 
   Stack buildStack(String img, String txt) {
